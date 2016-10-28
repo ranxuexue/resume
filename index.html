@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.min.css"/>
     <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/index1.css"/>
     <script>
         var desW = 750;
         var winW = document.documentElement.clientWidth;
@@ -16,51 +16,216 @@
         //desW/winW = 100/fs
         document.documentElement.style.fontSize = winW / desW * desWfontSize + 'px';
     </script>
+    <style id="style1">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+            perspective: 2000px;
+            position: relative;
+            /*margin: 200px auto 0;*/
+        }
+
+        .item {
+            width: 100%;
+            height: 60%;
+            top: 10%;
+            left: 0;
+            position: relative;
+            transform-style: preserve-3d;
+            /*animation: move 15s infinite 5s both;*/
+            -webkit-transform: scale(0.6) rotateX(-30deg) rotateY(30deg) rotateZ(30deg);
+            transform: scale(0.6) rotateX(-30deg) rotateY(30deg) rotateZ(30deg);
+
+            -webkit-transition: 1s;
+            transition: 1s;
+        }
+
+        @keyframes move {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            16.67% {
+                transform: rotateY(60deg);
+            }
+            33.33% {
+                transform: rotateY(120deg);
+            }
+            50% {
+                transform: rotateY(180deg);
+            }
+            66.67% {
+                transform: rotateY(240deg);
+            }
+            83.33% {
+                transform: rotateY(300deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        li {
+            box-sizing: border-box;
+            padding: 0.3rem;
+            width: 5.5rem;
+            height: 8rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(222, 222, 222, 0.8);
+            border: 1px solid #00ee00;
+            box-shadow: 0 1px 3px #fff;
+            border-radius: 5px;
+            font-size: 0.6rem;
+            text-shadow: 1px 1px 1px #f4f6f6;
+            color: #007aff;
+
+        }
+
+        .gradient {
+            width: 7rem;
+            height: 8rem;
+            position: absolute;
+            left: 50%;
+            top: 85%;
+            margin: -4rem 0 0 -3.5rem;
+            background: radial-gradient(3rem 4rem at center, rgba(50, 50, 50, 0.63), rgba(0, 0, 0, 0));
+            background: -webkit-radial-gradient(5rem 5rem at center, rgba(50, 50, 50, 1), rgba(0, 0, 0, 0));
+            transform: rotateX(85deg) translateZ(-3rem);
+        }
+
+        /*
+        角度传弧度：π/180*180
+        var deg = 15*Math.PI/180
+        Math.tan(deg) = 75/临边
+        */
+    </style>
 </head>
 <body>
 <div id="main">
     <div class="music">
-        <audio src="audio/beyond.mp3" loop preload="none" id="beyond"></audio>
-        <!--
-        preload:
-            none:不预加载音视频
-            metadata：只加载元数据 eg：音频的长度
-            auto：预加载全部音视频
-        controls:显示音视频的用户操作界面
-        -->
+        <audio src="audio/yq.m4a" loop preload="none" id="beyond"></audio>
+        <!--<img src="images/music_c0fda01.gif" alt="" id="gif"/>-->
     </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide slide1">
-                    <div class="photo"></div>
-                    <img src="img/8.png"/>
-                    <img src="img/p1.png"/>
-                    <img src="img/1.png"/>
-                    <img src="img/7.png"/>
-                    <img src="img/9.png"/>
-                    <img src="img/g.png"/>
-                    <img src="img/r.png"/>
-                    <img src="img/j.png"/>
-                    <img src="img/l.png"/>
+                <img src="images/g.png" alt=""/>
+                <img src="images/r.png" alt=""/>
+                <img src="images/j.png" alt=""/>
+                <img src="images/l.png" alt=""/>
             </div>
             <div class="swiper-slide slide2">
-                <img src="img/3.png"/>
-                <img src="img/snow.png"/>
-                <img src="img/snow.png"/>
-                <img src="img/snow.png"/>
-                <img src="img/snow.png"/>
-                <img src="img/snow.png"/>
-                <img src="img/snow.png"/>
-                <p>个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个个个个个人简历</p>
-                <p>个人简历个人简个个个个个个简个人简人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个个个个个个人简历</p>
-                <p>个人简历个人个人个个个个个个个个个简个人简人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历</p>
-                <p>个人简历个人简个人简个人简个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历</p>
-                <p>个人简历个人简个人简个人简个人简个人简个人简简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历个人简历</p>
+                <img src="images/tl.png" alt=""/>
+                <img src="images/tl1.png" alt=""/>
+                <img src="images/t.png" alt=""/>
+                <img src="images/text.png" alt=""/>
+                <img src="images/text1.png" alt=""/>
+                <img src="images/text2.png" alt=""/>
+                <img src="images/trb.png" alt=""/>
+                <img src="images/trb1.png" alt=""/>
+                <img src="images/star.png" alt=""/>
+                <img src="images/star.png" alt=""/>
+                <img src="images/15.png" alt=""/>
+                <span>做事<br/>认真</span>
+                <span>做事<br/>认真</span>
+                <span>做事<br/>认真</span>
+
+                <div class="title">
+                    <p>个人基本信息</p>
+
+                    <p>个人基本信息</p>
+
+                    <p>个人基本信息</p>
+
+                    <p>个人基本信息</p>
+                </div>
+                <div class="text">
+                    本人性格开朗活跃，喜欢交朋友，唱歌，
+                    能够很好地与同事相处；做事认真负责，极有耐心，不怕“改回第一稿”,
+                    能够很好地完成领导交代的工作任务！
+                </div>
             </div>
+            <div class="swiper-slide slide3">
+                <!--<img src="images/skay.png" alt=""/>-->
+                <img src="images/line.png" alt=""/>
+                <img src="images/workbg.png" alt=""/>
+                <img src="images/row.png" alt=""/>
+
+                <p class="info">工作经验</p>
+
+                <div class="jy1">
+                    <span>某公司</span>
+
+                    <p>某某项目</p>
+
+                    <p>完成某某任务某某任务某某任务某某任务某某任务某某任务某某任务某某任务某某任务</p>
+                    <img src="images/d.png" alt=""/>
+                </div>
+                <div class="jy2">
+                    <span>某公司</span>
+
+                    <p>某某项目</p>
+
+                    <p>完成某某任务某某任务某某任务某某任务某某任务某某任务某某任务某某任务某某任务</p>
+                    <img src="images/d.png" alt=""/>
+                </div>
+                <div class="jy3">
+                    <span>某公司</span>
+
+                    <p>某某项目</p>
+
+                    <p>完成某某任务某某任务某某任务某某任务某某任务某某任务某某任务某某任务某某任务</p>
+                    <img src="images/d.png" alt=""/>
+                </div>
+                <div class="jy4">
+                    <span>某公司</span>
+
+                    <p>某某项目</p>
+
+                    <p>完成某某任务某某任务某某任务某某任务某某任务某某任务某某任务某某任务某某任务</p>
+                    <img src="images/d.png" alt=""/>
+                </div>
+            </div>
+            <div class="swiper-slide slide4">
+                <p>职业技能</p>
+
+                <div class="wrap">
+                    <ul class="item">
+                        <li>js</li>
+                        <li>jq</li>
+                        <li>angular</li>
+                        <li>h5</li>
+                        <li>node</li>
+                        <li>css3</li>
+                    </ul>
+                    <div class="gradient"></div>
+                </div>
+            </div>
+            <div class="swiper-slide slide5">
+                <img src="images/lx.png" alt=""/>
+                <span>联系方式</span>
+                <p>电话：12345678901</p>
+                <p>邮箱：123@123.com</p>
+                <p>QQ：1234567</p>
+                <p>微信：2435346457</p>
+            </div>
+
         </div>
     </div>
 </div>
 <script src="js/swiper.min.js"></script>
+<script src="js/zepto.min.js"></script>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',//上下滑动
@@ -97,22 +262,72 @@
 
     var beyond = document.querySelector('#beyond');
     var music = document.querySelector('.music');
+    var gif = document.querySelector('.gif');
     window.setTimeout(function () {
         beyond.play();//音频播放  边缓冲边播放
         beyond.addEventListener("canplay", function () {
             music.className = "music musicMove";
             music.style.opacity = 1;
+//            gif.style.opacity=1;
         });
     }, 1000);
     music.addEventListener("click", function () {
-        if(beyond.paused){//停止
+        if (beyond.paused) {//停止
             beyond.play();
+//            gif.style.opacity=1;
             music.className = "music musicMove";
-        }else{//播放
+        } else {//播放
             beyond.pause();
             music.className = "music";
+//            gif.style.opacity=0;
         }
-    })
+    });
+    var olis = document.querySelectorAll('li');
+    var oStyle = document.querySelector('#style1');
+    for (var i = 0; i < olis.length; i++) {
+        ~(function (i) {
+            window.setTimeout(function () {
+                oStyle.innerHTML += "li:nth-child(" + (i + 1) + "){transform: rotateY(" + (olis.length - 1 - i) * 60 + "deg) translateZ(5rem);transition:0.5s;transition-delay:" + i * 0.1 + "s;}"
+            }, i * 100);
+        })(i);
+    }
+    var $cubeBox = $('.item');
+    //->随时记录当前盒子的旋转角度,让下一次的操作是在当前的角度基础上再次旋转的
+    $cubeBox.attr({
+        rotateX: -30,
+        rotateY: 45
+    });
+    $cubeBox.on('touchstart', function (ev) {
+        var point = ev.changedTouches[0];
+        $(this).attr({
+            strX: point.pageX,
+            strY: point.pageY,
+            changeX: 0,
+            changeY: 0
+        });
+    });
+    $cubeBox.on('touchmove', function (ev) {
+        var point = ev.changedTouches[0];
+        $(this).attr({
+            changeX: point.pageX - parseFloat($(this).attr('strX')),
+            changeY: point.pageY - parseFloat($(this).attr('strY'))
+        });
+    });
+    $cubeBox.on('touchend', function (ev) {
+        var changeX = parseFloat($(this).attr('changeX')),
+                changeY = parseFloat($(this).attr('changeY'));
+        var rotateX = parseFloat($(this).attr('rotateX')),
+                rotateY = parseFloat($(this).attr('rotateY'));
+        if (Math.abs(changeX) > 30 || Math.abs(changeY) > 30) {
+            //->肯定是滑动
+            rotateX = rotateX - changeY / 2;
+            rotateY = rotateY + changeX / 2;
+            $(this).attr({
+                rotateX: rotateX,
+                rotateY: rotateY
+            }).css('transform', 'scale(0.6)  rotateY(' + rotateY + 'deg)');
+        }//rotateX(' + rotateX + 'deg)
+    });
 </script>
 </body>
 </html>
